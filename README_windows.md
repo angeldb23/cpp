@@ -22,11 +22,11 @@ Este documento explica cómo poner el curso de C++ y desarrollo de juegos a func
 Abre **PowerShell** o la línea de comandos de MinGW y ejecuta:
 
 ```powershell
-git clone https://github.com/tuusuario/curso_cpp.git
-cd curso_cpp
+git clone https://github.com/angeldb23/cpp.git
+cd cpp
 ```
 
-Esto creará la carpeta `curso_cpp` con todos los módulos, el script `verificar.sh` y los archivos de configuración.
+Esto creará la carpeta `cpp` con todos los módulos.
 
 ---
 
@@ -85,65 +85,31 @@ Después de tener las librerías, **verifica** que el compilador las encuentre:
 g++ -std=c++20 -Wall -Wextra -I include -I path/to/SDL3/include -I path/to/glm -I path/to/imgui -I path/to/miniaudio -c src/leccion_01.cpp -o src/leccion_01.o
 ```
 
-If no errors, continue.
+Si no hay errores, continua.
 
 ---
 
 ## 4. Compilar y ejecutar un módulo
 
-From the repository folder (example with module 28):
+Desde la carpeta del repositorio (Ejemplo con el modulo 28):
 
 ```powershell
-# 1. Create build folder and enter it
+# 1. Crea la carpeta build y entra en ella
 mkdir build && cd build
 
-# 2. Configure CMake (using MinGW toolchain and vcpkg)
+# 2. COnfigura CMake usando la toolchain de MinGW y vcpkg
 cmake -S .. -B . -DCMAKE_TOOLCHAIN_FILE=toolchain-mingw.cmake -DVCPKG_ROOT="C:/path/to/vcpkg/installed/x64-windows"
 
-# 3. Compile
+# 3. Compila
 cmake --build . -j4
 
-# 4. Run the executable (example lesson 01)
+# 4. Corre el ejecutable (ejemplo con el modulo 1)
 .\leccion_01_criterios_seleccion.exe
 ```
 
-If all goes well, the SDL3 window should open and the program should close when you close the window.
+Si todo va bien, deberia abrirse la ventana de SDL3 y cerrarse cuando desees.
 
-### 4.1 Probar la verificación (`verificar.sh`)
-
-The original `verificar.sh` is a **bash** script and assumes a Linux environment. In Windows you can:
-
-- **Run it inside MSYS2** (if you have it installed) – it will behave like Linux.
-- **Translate the logic to PowerShell or a `.bat` script** – the essential part is compiling each solution and checking whether the binary fails or passes. A simplified example:
-
-```powershell
-# verify.ps1 (example)
-$mod = "28"
-$tmp = "$env:TEMP\verify_$mod"
-Remove-Item $tmp -ErrorAction SilentlyContinue
-$solutions = Get-ChildItem "$mod/soluciones/*.cpp"
-foreach ($sol in $solutions) {
-    $base = [System.IO.Path]::GetFileNameWithoutExtension($sol.Name)
-    $bin = "$tmp\$base.exe"
-    # Compile
-    g++ -std=c++20 -Wall -Wextra -I..\include $sol.FullName -o $bin
-    # Run with 10‑second timeout
-    $null = & timesout 10 $bin
-    if ($LastExitCode -eq 0) {
-        Write-Host "$base: OK_SOL"
-    } else {
-        Write-Host "$base: FALLA test"
-    }
-}
-```
-
-Adjust the paths according to your installation.
-
-> **Recommendation:** If you already have MSYS2 installed (see section 1), simply run `./verificar.sh 28` from the MSYS2 terminal; no need to adapt the script.
-
----
-
-## 5. Expected folder structure after installation
+## 4. Expected folder structure after installation
 
 ```
 curso_cpp/
@@ -165,50 +131,64 @@ curso_cpp/
 ├─ 29_proyecto_final/         ← (opcional) proyecto final – ver README_windows.md
 │   └─ README.md
 │
-├─ include/                   ← own course headers
-├─ verify.sh                  ← bash script (run in MSYS2 or translate)
-├─ CMakeLists.txt             ← root (optional, includes modules)
-├─ PROGRESO.md
-├─ LEEME_PRIMERO.md
-├─ DECISIONES.md
-├─ README_curso.md            ← course description
-├─ README_windows.md          ← Windows installation guide
-├─ assets/                    ← optional, course assets
+├─ include/                   ← Headers del curso
+├─ CMakeLists.txt             ← rRaiz (opcional, incluye modulos)
+├─ README.md                  ← Descripcion del curso
+├─ README_windows.md          ← Guia de instalacion del curso en Windows
+├─ assets/                    ← Assets del curso, opcional
 ```
 
 ---
 
-## 6. Common problem‑solving
+## 6. Resolución de problemas comunes
 
-| Problem | Cause | Solution |
+
+
+| Problema | Causa | Solución |
+
 |---|---|---|
-| `g++: command not found` | MinGW not in PATH | Add MinGW `bin` folder to Windows `PATH` or use the MinGW terminal. |
-| `cannot find -lSDL3` | SDL3 not linked | Install SDL3 via vcpkg or add the `SDL3.lib`/`.a` and pass `-lSDL3` on the command line. |
-| `ImGui no compiles` | Missing `IMGUI_IMPL_OPENGL_LOADER_GL3` or old headers | Use version `v1.91.5-docking` and follow the `CMakeLists.txt`; the script already includes `ImGui_ImplSDL3_InitForOpenGL(window)`. |
-| `Box2D errors undefined reference` | Library not linked | If using vcpkg: `target_link_libraries(m28_solucion box2d)`. If manual, add the `.a`/`.lib` path and `-lbox2d`. |
-| Program closes instantly | SDL or OpenGL context not initialized | Ensure `main` calls `SDL_Init(SDL_INIT_VIDEO)` and `SDL_CreateWindowAndRenderer` (or `SDL_GPU_CreateDevice`) before any render. |
-| `verificar.sh` reports “SALTA: libreria faltante” | Missing library or version mismatch | Install the library indicated (via vcpkg or manual) and re‑run. |
+
+| `g++: command not found` | MinGW no está en el PATH | Agregá la carpeta `bin` de MinGW al `PATH` de Windows o usá la terminal de MinGW. |
+
+| `cannot find -lSDL3` | SDL3 no está vinculada (linked) | Instalá SDL3 mediante vcpkg o agregá el archivo `SDL3.lib`/`.a` y pasá `-lSDL3` en la línea de comandos. |
+
+| `ImGui no compiles` | Falta `IMGUI_IMPL_OPENGL_LOADER_GL3` o los headers son antiguos | Usá la versión `v1.91.5-docking` y seguí el `CMakeLists.txt`; el script ya incluye `ImGui_ImplSDL3_InitForOpenGL(window)`. |
+
+| `Box2D errors undefined reference` | La librería no está vinculada (linked) | Si usás vcpkg: `target_link_libraries(m28_solucion box2d)`. Si es manual, agregá la ruta del `.a`/`.lib` y `-lbox2d`. |
+
+| El programa se cierra al instante | El contexto de SDL o OpenGL no fue inicializado | Asegurate de que `main` llame a `SDL_Init(SDL_INIT_VIDEO)` y a `SDL_CreateWindowAndRenderer` (o `SDL_GPU_CreateDevice`) antes de cualquier renderizado. |
 
 ---
 
-## 6. Quick “all‑in‑one” steps
+## 6. Pasos rápidos "todo en uno"
+
 
 ```powershell
-# 1. Install MinGW‑w64 and add to PATH
-# 2. Install vcpkg and run:
+
+# 1. Instalar MinGW‑w64 y agregarlo al PATH
+
+# 2. Instalar vcpkg y ejecutar:
+
    .\vcpkg\install sdl3 glm imgui box2d miniaudio
-# 3. Clone the repo
+
+# 3. Clonar el repositorio
+
 git clone ... && cd curso_cpp
-# 4. Configure and compile a module (example M28):
+
+# 4. Configurar y compilar un módulo (ejemplo M28):
+
 mkdir build && cd build
-cmake -S .. -B . -DCMAKE_TOOLCHAIN_FILE=toolchain-mingw.cmake -DVCPKG_ROOT="C:/path/to/vcpkg/installed/x64-windows"
+
+cmake -S .. -B . -DCMAKE_TOOLCHAIN_FILE=toolchain-mingw.cmake -DVCPKG_ROOT="C:/ruta/a/vcpkg/installed/x64-windows"
+
 cmake --build . -j4
-.\leccion_01_criterios_seleccion.exe   # test the window
-# 5. (optional) Run tests:
-#    launch `./verify.sh 28` inside MSYS2
+
+.\leccion_01_criterios_seleccion.exe   # probar la ventana
+
 ```
 
-With these steps you’ll have the course running on Windows without WSL or a full Linux install. If you encounter specific difficulties, see the “Problem‑solving” section or open an issue in the repository.
+Con estos pasos tendrás el curso funcionando en Windows sin necesidad de WSL ni de una instalación completa de Linux. 
 
 ---
-*This file forms part of the course delivery; together with `README_curso.md` and the modules 01‑28 it constitutes the complete documentation to get started.*
+
+*Este archivo forma parte de la entrega del curso; junto con `README_curso.md` y los módulos 01‑28 constituye la documentación completa para comenzar.*
