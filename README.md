@@ -17,7 +17,7 @@ Un recorrido estructurado de **28 módulos** que lleva al estudiante desde los f
   - GLM (matemáticas), Dear ImGui (interfaz), Box2D 2.4.x (física), miniaudio (audio), SDL3 (ventana + input + audio + GPU).
 
 ## ¿Qué se espera que el usuario aprenda?
-- **C++ moderno** (C++17/20): tipos fuertes, plantillas, RAII, punteros inteligentes, conceptos.
+- **C++ moderno** (C++17/20/23): tipos fuertes, plantillas, RAII, punteros inteligentes, conceptos.
 - **Arquitectura de software**: separación entre motor, juego y herramientas; uso de fachadas y encapsulamiento.
 - **Programación de bajo nivel**: manejo de memoria, punteros, estructuras de datos lineales y árboles.
 - **Desarrollo de juegos 2D**: bucle de juego, entrada de teclado/mouse, renderizado con OpenGL 3.3 core (o SDL_GPU), física básica (AABB/SAT o Box2D), audio con miniaudio, UI con Dear ImGui.
