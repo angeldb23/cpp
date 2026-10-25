@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/ejercicio_08_pack_writer.dir/link.d CMakeFiles/ejercicio_08_pack_writer.dir/ejercicios/ejercicio_08_pack_writer.cpp.o -o ejercicio_08_pack_writer

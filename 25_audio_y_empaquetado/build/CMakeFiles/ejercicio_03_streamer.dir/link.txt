@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/ejercicio_03_streamer.dir/link.d CMakeFiles/ejercicio_03_streamer.dir/ejercicios/ejercicio_03_streamer.cpp.o -o ejercicio_03_streamer

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/solucion_02_mezclador.dir/link.d CMakeFiles/solucion_02_mezclador.dir/soluciones/solucion_02_mezclador.cpp.o -o solucion_02_mezclador

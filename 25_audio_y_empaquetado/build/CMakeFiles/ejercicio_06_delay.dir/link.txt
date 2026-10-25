@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/ejercicio_06_delay.dir/link.d CMakeFiles/ejercicio_06_delay.dir/ejercicios/ejercicio_06_delay.cpp.o -o ejercicio_06_delay

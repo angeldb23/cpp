@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/ejercicio_11_localizador.dir/link.d CMakeFiles/ejercicio_11_localizador.dir/ejercicios/ejercicio_11_localizador.cpp.o -o ejercicio_11_localizador

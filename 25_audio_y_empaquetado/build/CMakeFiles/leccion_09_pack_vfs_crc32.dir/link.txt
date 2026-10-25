@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/leccion_09_pack_vfs_crc32.dir/link.d CMakeFiles/leccion_09_pack_vfs_crc32.dir/leccion_09_pack_vfs_crc32.cpp.o -o leccion_09_pack_vfs_crc32

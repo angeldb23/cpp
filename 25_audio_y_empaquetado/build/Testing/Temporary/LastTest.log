@@ -1,0 +1,269 @@
+Start testing: Oct 23 21:18 -03
+----------------------------------------------------------
+1/11 Testing: solucion_01_formato_muestras
+1/11 Test: solucion_01_formato_muestras
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_01_formato_muestras"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_01_formato_muestras" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] FrameMath
+  [PASS] S16aF32
+  [PASS] F32aS16
+  [PASS] DurationYdB
+=============================================
+Total: 4 | Pasaron: 4 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_01_formato_muestras" end time: Oct 23 21:18 -03
+"solucion_01_formato_muestras" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/11 Testing: solucion_02_mezclador
+2/11 Test: solucion_02_mezclador
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_02_mezclador"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_02_mezclador" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] SumaSinClamp
+  [PASS] Saturacion
+  [PASS] GananciaYPicoNegativo
+  [PASS] Limpiar
+=============================================
+Total: 4 | Pasaron: 4 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_02_mezclador" end time: Oct 23 21:18 -03
+"solucion_02_mezclador" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/11 Testing: solucion_03_streamer
+3/11 Test: solucion_03_streamer
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_03_streamer"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_03_streamer" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] PaginasCompletas
+  [PASS] PaginaCortaAlFinal
+=============================================
+Total: 2 | Pasaron: 2 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_03_streamer" end time: Oct 23 21:18 -03
+"solucion_03_streamer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/11 Testing: solucion_04_pool_voces
+4/11 Test: solucion_04_pool_voces
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_04_pool_voces"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_04_pool_voces" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] OcupaPrimerLibre
+  [PASS] RoboConPrioridad
+  [PASS] EmpateRobaLaMasVieja
+  [PASS] RechazoSinRobo
+=============================================
+Total: 4 | Pasaron: 4 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_04_pool_voces" end time: Oct 23 21:18 -03
+"solucion_04_pool_voces" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/11 Testing: solucion_05_buses_ducking
+5/11 Test: solucion_05_buses_ducking
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_05_buses_ducking"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_05_buses_ducking" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] VolumenesJerarquicos
+  [PASS] AtaqueAlObjetivo
+  [PASS] ReleaseMasLento
+=============================================
+Total: 3 | Pasaron: 3 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_05_buses_ducking" end time: Oct 23 21:18 -03
+"solucion_05_buses_ducking" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/11 Testing: solucion_06_delay
+6/11 Test: solucion_06_delay
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_06_delay"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_06_delay" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] ConfigInvalida
+  [PASS] ImpulsoEnElDelay
+  [PASS] MezclaWetDry
+=============================================
+Total: 3 | Pasaron: 3 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_06_delay" end time: Oct 23 21:18 -03
+"solucion_06_delay" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/11 Testing: solucion_07_biquad
+7/11 Test: solucion_07_biquad
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_07_biquad"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_07_biquad" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] RespuestaImpulso
+  [PASS] EstabilidadYDecaimiento
+  [PASS] GananciaDC
+=============================================
+Total: 3 | Pasaron: 3 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_07_biquad" end time: Oct 23 21:18 -03
+"solucion_07_biquad" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/11 Testing: solucion_08_pack_writer
+8/11 Test: solucion_08_pack_writer
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_08_pack_writer"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_08_pack_writer" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] HeaderYCount
+  [PASS] TocOffsetsAlineadosYDatos
+  [PASS] AlineacionEntreLumps
+=============================================
+Total: 3 | Pasaron: 3 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_08_pack_writer" end time: Oct 23 21:18 -03
+"solucion_08_pack_writer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/11 Testing: solucion_09_crc32
+9/11 Test: solucion_09_crc32
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_09_crc32"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_09_crc32" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] VectorRFC
+  [PASS] StreamingPorChunks
+  [PASS] VacioYCorrupcion
+=============================================
+Total: 3 | Pasaron: 3 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_09_crc32" end time: Oct 23 21:18 -03
+"solucion_09_crc32" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/11 Testing: solucion_10_manifest
+10/11 Test: solucion_10_manifest
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_10_manifest"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_10_manifest" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] ParseBasico
+  [PASS] RolesPorSeccion
+  [PASS] LineaInvalida
+=============================================
+Total: 3 | Pasaron: 3 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_10_manifest" end time: Oct 23 21:18 -03
+"solucion_10_manifest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/11 Testing: solucion_11_localizador
+11/11 Test: solucion_11_localizador
+Command: "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build/solucion_11_localizador"
+Directory: /home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/build
+"solucion_11_localizador" start time: Oct 23 21:18 -03
+Output:
+----------------------------------------------------------
+
+================ TEST RUNNER ================
+  [PASS] ResolucionDirecta
+  [PASS] FallbackChain
+  [PASS] HotSwap
+=============================================
+Total: 3 | Pasaron: 3 | Fallaron: 0
+=============================================
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"solucion_11_localizador" end time: Oct 23 21:18 -03
+"solucion_11_localizador" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 23 21:18 -03

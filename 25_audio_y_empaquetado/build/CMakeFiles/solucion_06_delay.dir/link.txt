@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/solucion_06_delay.dir/link.d CMakeFiles/solucion_06_delay.dir/soluciones/solucion_06_delay.cpp.o -o solucion_06_delay

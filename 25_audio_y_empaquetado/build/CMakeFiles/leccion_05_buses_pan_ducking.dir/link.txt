@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/leccion_05_buses_pan_ducking.dir/link.d CMakeFiles/leccion_05_buses_pan_ducking.dir/leccion_05_buses_pan_ducking.cpp.o -o leccion_05_buses_pan_ducking

@@ -1,0 +1,24 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/angel/Documents/Coding/learning/curso_cpp/25_audio_y_empaquetado/leccion_01_miniaudio_contexto_device.cpp" "CMakeFiles/leccion_01_miniaudio_contexto_device.dir/leccion_01_miniaudio_contexto_device.cpp.o" "gcc" "CMakeFiles/leccion_01_miniaudio_contexto_device.dir/leccion_01_miniaudio_contexto_device.cpp.o.d"
+  "" "leccion_01_miniaudio_contexto_device" "gcc" "CMakeFiles/leccion_01_miniaudio_contexto_device.dir/link.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

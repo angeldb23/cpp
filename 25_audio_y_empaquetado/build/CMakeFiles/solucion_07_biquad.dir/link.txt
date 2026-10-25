@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/solucion_07_biquad.dir/link.d CMakeFiles/solucion_07_biquad.dir/soluciones/solucion_07_biquad.cpp.o -o solucion_07_biquad

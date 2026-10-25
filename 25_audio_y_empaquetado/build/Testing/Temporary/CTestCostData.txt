@@ -1,0 +1,12 @@
+solucion_01_formato_muestras 1 0.00665645
+solucion_02_mezclador 1 0.00308798
+solucion_03_streamer 1 0.00302952
+solucion_04_pool_voces 1 0.00721836
+solucion_05_buses_ducking 1 0.00329358
+solucion_06_delay 1 0.00279706
+solucion_07_biquad 1 0.00284028
+solucion_08_pack_writer 1 0.0075219
+solucion_09_crc32 1 0.00288747
+solucion_10_manifest 1 0.00268095
+solucion_11_localizador 1 0.00614814
+---

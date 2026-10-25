@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/leccion_10_pipeline_assets_manifest.dir/link.d CMakeFiles/leccion_10_pipeline_assets_manifest.dir/leccion_10_pipeline_assets_manifest.cpp.o -o leccion_10_pipeline_assets_manifest

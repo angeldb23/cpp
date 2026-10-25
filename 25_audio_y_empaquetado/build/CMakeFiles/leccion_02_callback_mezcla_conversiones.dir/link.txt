@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/leccion_02_callback_mezcla_conversiones.dir/link.d CMakeFiles/leccion_02_callback_mezcla_conversiones.dir/leccion_02_callback_mezcla_conversiones.cpp.o -o leccion_02_callback_mezcla_conversiones

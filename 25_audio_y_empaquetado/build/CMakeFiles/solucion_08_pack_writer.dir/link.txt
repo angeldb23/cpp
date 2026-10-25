@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/solucion_08_pack_writer.dir/link.d CMakeFiles/solucion_08_pack_writer.dir/soluciones/solucion_08_pack_writer.cpp.o -o solucion_08_pack_writer

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/ejercicio_01_formato_muestras.dir/link.d CMakeFiles/ejercicio_01_formato_muestras.dir/ejercicios/ejercicio_01_formato_muestras.cpp.o -o ejercicio_01_formato_muestras

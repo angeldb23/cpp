@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/solucion_11_localizador.dir/link.d CMakeFiles/solucion_11_localizador.dir/soluciones/solucion_11_localizador.cpp.o -o solucion_11_localizador

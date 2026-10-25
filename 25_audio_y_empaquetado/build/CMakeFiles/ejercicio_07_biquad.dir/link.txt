@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/ejercicio_07_biquad.dir/link.d CMakeFiles/ejercicio_07_biquad.dir/ejercicios/ejercicio_07_biquad.cpp.o -o ejercicio_07_biquad

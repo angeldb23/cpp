@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/solucion_04_pool_voces.dir/link.d CMakeFiles/solucion_04_pool_voces.dir/soluciones/solucion_04_pool_voces.cpp.o -o solucion_04_pool_voces

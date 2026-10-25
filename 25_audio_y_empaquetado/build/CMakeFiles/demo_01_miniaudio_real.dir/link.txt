@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/demo_01_miniaudio_real.dir/link.d CMakeFiles/demo_01_miniaudio_real.dir/leccion_01_miniaudio_contexto_device.cpp.o -o demo_01_miniaudio_real  _deps/miniaudio-build/libminiaudio.a
