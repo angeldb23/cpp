@@ -13,7 +13,6 @@ Un recorrido estructurado de **28 módulos** que lleva al estudiante desde los f
 - **Herramientas comunes**:
   - Compilador **g++** (C++20) o **MinGW‑w64** en Windows.
   - **CMake** 3.20+ para compilar y generar los tests (CTest).
-  - Script `./verificar.sh` que compila y ejecuta los tests, informa de fallos y salta bibliotecas faltantes.
 - **Dependencias externas** (sólo en módulos avanzados):
   - GLM (matemáticas), Dear ImGui (interfaz), Box2D 2.4.x (física), miniaudio (audio), SDL3 (ventana + input + audio + GPU).
 
